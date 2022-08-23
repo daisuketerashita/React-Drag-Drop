@@ -26,11 +26,12 @@ function Main() {
                                                     opacity: snapshot.isDragging ? '0.3' : '1',
                                                 }}
                                             >
-                                                <Card></Card>
+                                                <Card>{task.title}</Card>
                                             </div>
                                         )}
                                     </Draggable>
                                 ))}
+                                {provided.placeholder}
                             </div>
                         </div>
                         )}
